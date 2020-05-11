@@ -9,7 +9,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 import pickle
 
-df=pd.read_csv(r"D:\Users\abhisv\Desktop\Historical Product Demand.csv")
+df=pd.read_excel(r"D:\Users\abhisv\Desktop\Historical Product Demand.xlsx")
 df=df.sample(10000)
 df.dropna(axis=0,how='any',inplace=True)
 df.reset_index(inplace=True,drop=True)
